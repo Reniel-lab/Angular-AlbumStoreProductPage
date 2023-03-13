@@ -6,7 +6,7 @@ import { AppComponent } from "./app.component";
 import { ProductPageComponent } from "./product-page/product-page.component";
 import { ProductDescriptionComponent } from "./product-description/product-description.component";
 import { ProductService } from "./product.service";
-import { HttpClient } from "@angular/common/http";
+import { HttpModule } from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { HttpClient } from "@angular/common/http";
     ProductPageComponent,
     ProductDescriptionComponent,
   ],
-  imports: [BrowserModule, FormsModule, HttpClient],
+  imports: [BrowserModule, FormsModule, HttpModule],
   providers: [ProductService],
   bootstrap: [AppComponent],
 })
